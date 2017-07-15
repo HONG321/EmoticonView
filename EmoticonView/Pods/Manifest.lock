@@ -1,0 +1,18 @@
+PODS:
+  - pop (1.0.9)
+  - SVProgressHUD (2.1.2)
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - pop
+  - SVProgressHUD
+  - YYModel
+
+SPEC CHECKSUMS:
+  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: cd16ade0e7dbb89ce0e8cbd7436b65a98f2e3628
+
+COCOAPODS: 1.1.1

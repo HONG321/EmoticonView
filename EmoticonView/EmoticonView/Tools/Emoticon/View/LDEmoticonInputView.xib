@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Dx7-Kx-xtn" customClass="LDEmoticonInputView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="261"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Ic5-Sx-tFw">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="217"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="M6n-qS-88A" customClass="LDEmoticonLayout">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="Dx7-Kx-xtn" id="afo-hq-gfo"/>
+                        <outlet property="delegate" destination="Dx7-Kx-xtn" id="HoF-5g-Tiq"/>
+                    </connections>
+                </collectionView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" hidesForSinglePage="YES" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="rmQ-3f-1YC">
+                    <rect key="frame" x="160" y="188" width="55" height="37"/>
+                </pageControl>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="76u-t0-TBp" userLabel="底部工具栏" customClass="LDEmoticonToolbar">
+                    <rect key="frame" x="0.0" y="217" width="375" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="RZY-5L-pIh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="76u-t0-TBp" firstAttribute="leading" secondItem="Dx7-Kx-xtn" secondAttribute="leading" id="1c7-vU-0a7"/>
+                <constraint firstItem="rmQ-3f-1YC" firstAttribute="centerX" secondItem="Dx7-Kx-xtn" secondAttribute="centerX" id="6oJ-1d-UK5"/>
+                <constraint firstItem="Ic5-Sx-tFw" firstAttribute="leading" secondItem="Dx7-Kx-xtn" secondAttribute="leading" id="6sq-xj-63e"/>
+                <constraint firstItem="rmQ-3f-1YC" firstAttribute="bottom" secondItem="76u-t0-TBp" secondAttribute="top" constant="8" id="AbB-fq-Zr6"/>
+                <constraint firstAttribute="trailing" secondItem="Ic5-Sx-tFw" secondAttribute="trailing" id="bJG-6l-UxV"/>
+                <constraint firstAttribute="bottom" secondItem="76u-t0-TBp" secondAttribute="bottom" id="nmK-mQ-zGD"/>
+                <constraint firstItem="Ic5-Sx-tFw" firstAttribute="top" secondItem="Dx7-Kx-xtn" secondAttribute="top" id="ozh-OG-8BO"/>
+                <constraint firstAttribute="trailing" secondItem="76u-t0-TBp" secondAttribute="trailing" id="vRy-rC-Xbs"/>
+                <constraint firstItem="76u-t0-TBp" firstAttribute="top" secondItem="Ic5-Sx-tFw" secondAttribute="bottom" id="wtb-dy-8hx"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="collectionView" destination="Ic5-Sx-tFw" id="img-KI-yWf"/>
+                <outlet property="pageControl" destination="rmQ-3f-1YC" id="lSe-pq-gX3"/>
+                <outlet property="toolbar" destination="76u-t0-TBp" id="Xj8-xl-DP3"/>
+            </connections>
+            <point key="canvasLocation" x="59.5" y="-145.5"/>
+        </view>
+    </objects>
+</document>
