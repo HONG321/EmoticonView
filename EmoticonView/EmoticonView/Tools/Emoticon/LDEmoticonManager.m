@@ -177,7 +177,8 @@
     
     // 4. 判断表情数组是否超出 20，如果超出，删除末尾的表情
     if (self.packages[0].emoticons.count > 20) {
-        [self.packages[0].emoticons removeObjectsInRange:NSMakeRange(20, self.packages[0].emoticons.count)];
+        
+        [self.packages[0].emoticons removeObjectsInRange:NSMakeRange(20, self.packages[0].emoticons.count - 20)];
     }
 }
 
