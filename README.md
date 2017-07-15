@@ -22,7 +22,7 @@ NSString+CZEmoji：将Emoji编码转换为Unicode字符串的工具类。
 UIView+CZAddition： UIView的一些便利方法封装。
 
 ### Emoticon
-表情键盘的具体实现。主要是使用UICollectionView实现表情布局，详情看代码注释。
+表情键盘的具体实现。主要是使用UICollectionView实现表情布局，同时使用长按手势实现Pop动画。详情看代码注释。
 
 ## 效果图
 ![image](https://github.com/HONG321/EmoticonView/blob/master/EmoticonView/EmoticonView/ScreenShot/表情键盘.gif)
