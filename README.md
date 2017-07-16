@@ -12,6 +12,7 @@
 
 ## Model
 存放表情键盘的“最近表情” CoreData 模型。
+注意：CoreData添加模型文件时，有可能编译不通过，需要到Build Phases->Complile Sources 看里面有没有 .xcdatamodeld文件参与编译，如果有，删除。
 
 ## Tools 
 ### CoreDataManager
