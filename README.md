@@ -11,7 +11,7 @@
 文本编辑视图，实现了将表情属性图片转换为纯文本字符串及向文本视图插入表情符号。
 
 ## Model
-存放表情键盘的“最近表情” CoreData 模型。
+存放表情键盘的“最近表情” CoreData 模型。  
 注意：CoreData添加模型文件时，有可能编译不通过，需要到Build Phases->Complile Sources 看里面有没有 .xcdatamodeld文件参与编译，如果有，删除。
 
 ## Tools 
