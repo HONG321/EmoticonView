@@ -24,6 +24,8 @@
         return _fetchedResultsController;
     }
     NSFetchRequest *fetchRequest = [EmoticonObject fetchRequest];
+    // 限制查询二十条数据
+    fetchRequest.fetchLimit = 20;
     NSSortDescriptor *sort1 = [NSSortDescriptor sortDescriptorWithKey:@"times" ascending:NO];
     fetchRequest.sortDescriptors = @[sort1];
     _fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:[LDCoreDataManager sharedManager].moc sectionNameKeyPath:nil cacheName:nil];

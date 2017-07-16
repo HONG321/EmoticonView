@@ -29,8 +29,8 @@
                         <outlet property="delegate" destination="Dx7-Kx-xtn" id="HoF-5g-Tiq"/>
                     </connections>
                 </collectionView>
-                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" hidesForSinglePage="YES" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="rmQ-3f-1YC">
-                    <rect key="frame" x="160" y="188" width="55" height="37"/>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" hidesForSinglePage="YES" numberOfPages="1" translatesAutoresizingMaskIntoConstraints="NO" id="rmQ-3f-1YC">
+                    <rect key="frame" x="187.5" y="225" width="0.0" height="0.0"/>
                 </pageControl>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="76u-t0-TBp" userLabel="底部工具栏" customClass="LDEmoticonToolbar">
                     <rect key="frame" x="0.0" y="217" width="375" height="44"/>
